@@ -1,0 +1,116 @@
+*,
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(89865.jpg);
+}
+
+.container-navbar {
+background-color: gray;
+}
+
+.a-navbar {
+    color: beige;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.ul-navbar {
+    display: flex;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+}
+
+.li-navbar:hover {
+    background-color: black;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 10px;
+}
+
+.container-content {
+
+}
+
+.img-content {
+    margin-top: 50px;
+    margin-right: 200px;
+    width: 25%;
+    border-radius: 30px;
+}
+
+.img-content.visible {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.container-font {
+    color: beige;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.major-font {
+    margin-top: 50px;
+    margin-left: 440px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.span-font {
+    display: inline-block;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-left: 100px;
+    color: beige;
+}
+.span-font span {
+    display: inline-block;
+    opacity: 0;
+    animation: typing infinite 5s forwards;
+}
+@keyframes typing {
+    0%{
+        opacity: 0;
+        transform: translateY(1em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
+.span-font span:nth-child(1) { animation-delay: 0.5s; }
+.span-font span:nth-child(2) { animation-delay: 0.6s; }
+.span-font span:nth-child(3) { animation-delay: 0.7s; }
+.span-font span:nth-child(4) { animation-delay: 0.8s; }
+.span-font span:nth-child(5) { animation-delay: 0.9s; }
+.span-font span:nth-child(6) { animation-delay: 1s; }
+.span-font span:nth-child(7) { animation-delay: 1.1s; }
+.span-font span:nth-child(8) { animation-delay: 1.2s; }
+.span-font span:nth-child(9) { animation-delay: 1.3s; }
+.span-font span:nth-child(10) { animation-delay: 1.4s; }
+.span-font span:nth-child(11) { animation-delay: 1.5s; }
+.span-font span:nth-child(12) { animation-delay: 1.6s; }
+.span-font span:nth-child(13) { animation-delay: 1.7s; }
+.span-font span:nth-child(14) { animation-delay: 1.8s; }
+
+.cursor span {
+    display: inline-block;
+    width: 10px;
+    height: 60px;
+    background-color: black;
+    margin-left: 5px;
+    animation: blink 0.5s step-end infinite;
+}
